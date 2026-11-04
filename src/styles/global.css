@@ -604,7 +604,7 @@ section {
 }
 
 .work-two-interstitial__image img {
-  object-position: center 36%;
+  object-position: left 36%;
 }
 
 .work-two-interstitial__phrase {
@@ -791,7 +791,7 @@ section {
 }
 
 .work-four-opening__image--portrait img {
-  object-position: 27% center;
+  object-position: 27% 10%;
 }
 
 .work-four-opening__index {
@@ -846,7 +846,7 @@ section {
 }
 
 .work-four-final__image img {
-  object-position: 68% center;
+  object-position: 68% 4%;
 }
 
 .work-four-final__copy {

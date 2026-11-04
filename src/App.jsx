@@ -42,13 +42,13 @@ export default function App() {
       {/* 01 — Hero / introduction */}
       <section className="hero section-dark" aria-labelledby="hero-title">
         <EditorialImage
-          src={images.darkPortrait}
+          src={images.vogue}
           alt="Contemporary dancer turning under a narrow stage light"
           className="hero__image hero__image--main"
           loading="eager"
         />
         <EditorialImage
-          src={images.concreteStudio}
+          src={images.salto}
           alt="Contemporary dancer rehearsing in a concrete studio"
           className="hero__image hero__image--secondary"
           loading="eager"
@@ -62,12 +62,12 @@ export default function App() {
           ))}
         </h1>
         <Reveal className="hero__role" delay={230}>
-          <span aria-hidden="true">↳</span> {t.hero.role}
+          {/*<span aria-hidden="true">↳</span> {t.hero.role} */}
         </Reveal>
         <Reveal as="p" className="hero__intro" delay={300}>{t.hero.intro}</Reveal>
         <Reveal as="p" className="hero__note" delay={380}>{t.hero.note}</Reveal>
         <Reveal className="hero__scroll" delay={500}>
-          <span>{t.hero.scroll}</span><i aria-hidden="true" />
+         {/* <span>{t.hero.scroll}</span><i aria-hidden="true" /> */}
         </Reveal>
       </section>
 
@@ -81,7 +81,7 @@ export default function App() {
 
       {/* 03 — Work 1 title / visual opening */}
       <section className="work-one-opening image-section" aria-labelledby="work-one-opening-title">
-        <EditorialImage src={images.redStage} alt="Dancer extending across a red-lit theatre stage" className="image-section__background" />
+        <EditorialImage src={images.sonsdembat1} alt="Dancer extending across a red-lit theatre stage" className="image-section__background" />
         <div className="image-scrim image-scrim--soft" />
         <Reveal as="p" className="corner-index">{t.work1.index}</Reveal>
         <h2 className="work-one-opening__title" id="work-one-opening-title">
@@ -120,7 +120,7 @@ export default function App() {
 
       {/* 07 — Work 2 interstitial */}
       <section className="work-two-interstitial image-section">
-        <EditorialImage src={images.darkPortrait} alt="Solo dancer caught between stillness and motion" className="image-section__background work-two-interstitial__image" />
+        <EditorialImage src={images.perfil} alt="Solo dancer caught between stillness and motion" className="image-section__background work-two-interstitial__image" />
         <div className="image-scrim image-scrim--left" />
         <Reveal as="p" className="work-two-interstitial__phrase">{t.work2.interstitial}</Reveal>
         <Reveal as="span" className="work-two-interstitial__line" aria-hidden="true" />
@@ -148,7 +148,7 @@ export default function App() {
 
       {/* 10 — Work 3 detail */}
       <section className="work-three-detail image-section">
-        <EditorialImage src={images.blueStage} alt="Contemporary dancer held in cool theatrical light" className="image-section__background" />
+        <EditorialImage src={images.espalda} alt="Contemporary dancer held in cool theatrical light" className="image-section__background" />
         <div className="image-scrim image-scrim--right" />
         <WorkInfo work={t.work3} align="left" />
         <Reveal as="span" className="work-three-detail__vertical" aria-hidden="true">MARÍA DE ÁVILA — MADRID</Reveal>
@@ -164,8 +164,8 @@ export default function App() {
       {/* 12 — Work 4 title / visual opening */}
       <section className="work-four-opening section-warm" aria-labelledby="work-four-title">
         <div className="work-four-opening__images">
-          <EditorialImage src={images.amberCurtain} alt="Dancer reaching through warm amber light" className="work-four-opening__image work-four-opening__image--wide" />
-          <EditorialImage src={images.rehearsalClose} alt="Dancer refining a gesture in rehearsal" className="work-four-opening__image work-four-opening__image--portrait" />
+          <EditorialImage src={images.sonsdembat2} alt="Dancer reaching through warm amber light" className="work-four-opening__image work-four-opening__image--portrait" />
+          <EditorialImage src={images.sonsdembat3} alt="Dancer refining a gesture in rehearsal" className="work-four-opening__image work-four-opening__image--portrait" />
         </div>
         <Reveal as="span" className="work-four-opening__index">({t.work4.index})</Reveal>
         <Reveal as="h2" className="work-four-opening__title" id="work-four-title">{t.work4.title}</Reveal>
@@ -180,7 +180,7 @@ export default function App() {
 
       {/* 14 — Work 4 final information */}
       <section className="work-four-final section-cream">
-        <EditorialImage src={images.concreteStudio} alt="Dancer tracing a low arc in a quiet studio" className="work-four-final__image" />
+        <EditorialImage src={images.pose} alt="Dancer tracing a low arc in a quiet studio" className="work-four-final__image" />
         <div className="work-four-final__copy">
           <Reveal as="p" className="work-four-final__number">04 / 04</Reveal>
           <Reveal as="h2" className="work-four-final__heading" delay={90}>{t.work4.finalHeading}</Reveal>
@@ -200,7 +200,7 @@ export default function App() {
           <Reveal as="a" href={`mailto:${t.contact.email}`} className="contact__item">
             <span>{t.contact.emailLabel}</span><strong>{t.contact.email}</strong>
           </Reveal>
-          <Reveal as="a" href="https://www.instagram.com/" className="contact__item" target="_blank" rel="noreferrer" delay={70}>
+          <Reveal as="a" href="https://www.instagram.com/lucia_terol_/" className="contact__item" target="_blank" rel="noreferrer" delay={70}>
             <span>{t.contact.instagramLabel}</span><strong>{t.contact.instagram}</strong>
           </Reveal>
           <Reveal as="a" href={`tel:${t.contact.phone.replace(/\s/g, '')}`} className="contact__item" delay={140}>
